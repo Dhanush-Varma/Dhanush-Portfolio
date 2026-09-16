@@ -36,7 +36,7 @@ jobs:
           cache: "pnpm"
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile || pnpm install
+        run: pnpm install --no-frozen-lockfile
 
       - name: Build portfolio
         run: PORT=4173 BASE_PATH=/Dhanush-Portfolio/ pnpm --filter @workspace/dhanush-portfolio run build
