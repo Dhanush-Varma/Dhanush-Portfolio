@@ -13,9 +13,15 @@ import {
   X,
 } from 'lucide-react';
 
-const portraitPath =
-  '/attached_assets/Gemini_Generated_Image_qeo8i8qeo8i8qeo8_1787387108586.jpeg';
-const resumePath = '/attached_assets/Dhanush_Indla_Resume_1787482786073.pdf';
+const assetPath = (path: string) =>
+  `${import.meta.env.BASE_URL}${path.replace(/^\/+/, '')}`;
+
+const portraitPath = assetPath(
+  'attached_assets/Gemini_Generated_Image_qeo8i8qeo8i8qeo8_1787387108586.jpeg',
+);
+const resumePath = assetPath(
+  'attached_assets/Dhanush_Indla_Resume_1787482786073.pdf',
+);
 
 const projects = [
   {
@@ -53,35 +59,35 @@ const certifications = [
     issuer: 'BCG X · Forage',
     date: 'Mar 2025',
     detail: 'Data extraction, initial analysis, and an AI-powered financial chatbot.',
-    href: '/attached-assets/BCG_-_GenAI_Job_Simulation_1787389232884.pdf',
+    href: assetPath('attached-assets/BCG_-_GenAI_Job_Simulation_1787389232884.pdf'),
   },
   {
     title: 'Data Analytics Job Simulation',
     issuer: 'Deloitte Australia · Forage',
     date: 'Jun 2025',
     detail: 'Data analysis and forensic technology.',
-    href: '/attached-assets/Deloitte_Australia_-_Data_Analytics_Job_Simulation_1787389232889.pdf',
+    href: assetPath('attached-assets/Deloitte_Australia_-_Data_Analytics_Job_Simulation_1787389232889.pdf'),
   },
   {
     title: 'Data Analytics Job Simulation',
     issuer: 'Quantium · Forage',
     date: 'Jun 2025',
     detail: 'Customer analytics, experimentation, uplift testing, and commercial application.',
-    href: '/attached-assets/Quantium_-_Data_Analytics_Job_Simulation_1787389242438.pdf',
+    href: assetPath('attached-assets/Quantium_-_Data_Analytics_Job_Simulation_1787389242438.pdf'),
   },
   {
     title: 'UX Design Advanced Job Simulation',
     issuer: 'Lloyds Banking Group · Forage',
     date: 'Oct 2025',
     detail: 'Customer spending research, value propositions, and executive presentation design.',
-    href: '/attached-assets/Lloyds_Banking_Group_-_UX_Design_Advanced_Job_Simulation_1787389242431.pdf',
+    href: assetPath('attached-assets/Lloyds_Banking_Group_-_UX_Design_Advanced_Job_Simulation_1787389242431.pdf'),
   },
   {
     title: 'Data Science Job Simulation',
     issuer: 'Forage',
     date: 'Apr 2026',
     detail: 'EDA, data cleaning, feature engineering, modeling, evaluation, and recommendations.',
-    href: '/attached-assets/Dhanush_Indla_Data_Science_Job_Simulation_1787389232890.pdf',
+    href: assetPath('attached-assets/Dhanush_Indla_Data_Science_Job_Simulation_1787389232890.pdf'),
   },
 ];
 
